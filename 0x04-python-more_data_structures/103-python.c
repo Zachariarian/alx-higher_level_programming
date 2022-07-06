@@ -5,6 +5,7 @@
 /**
  * print_python_bytes - prints info about python lists.
  * @p: address of pyobject struct.
+ * return 0
  */
 void print_python_bytes(PyObject *p)
 {
@@ -29,6 +30,7 @@ printf("\n");
 /**
  * print_python_list - prints info about python lists.
  * @p: address of PyObject struct.
+ * Return 0
  */
 void print_python_list(PyObject *p)
 {
