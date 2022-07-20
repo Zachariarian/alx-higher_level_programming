@@ -8,17 +8,17 @@ class Square():
         """"Initialize data"""
         self.size = size
         self.position = position
-    
+
     @property
     def size(self):
         """"get size"""
         return self.__size
-    
+
     @property
     def position(self):
         """"get position"""
         return self.__position
-    
+
     @size.setter
     def size(self, value):
         """"set size"""
@@ -28,7 +28,7 @@ class Square():
             raise ValueError("size must be >= 0")
         else:
             self.__size = value
-    
+
     @position.setter
     def position(self, value):
         """"set position"""
@@ -42,11 +42,11 @@ class Square():
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
-    
+
     def area(self):
         """"get area of the square"""
         return self.size ** 2
-    
+
     def my_print(self):
         """print the square"""
         if self.size == 0:

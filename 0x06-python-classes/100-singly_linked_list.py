@@ -12,12 +12,12 @@ class Node:
         """
         self.data = data
         self.next_node = next_node
-    
+
     @property
     def data(self):
         """Get/set the data of the Node."""
         return (self.__data)
-    
+
     @data.setter
     def data(self, value):
         if not isinstance(value, int):
@@ -41,7 +41,7 @@ class SinglyLinkedList:
     def __init__(self):
         """Initalize a new SinglyLinkedList."""
         self.__head = None
-    
+
     def sorted_insert(self, value):
         """Insert a new Node to the SinglyLinkedList.
         The node is inserted into the list at the correct
@@ -63,7 +63,7 @@ class SinglyLinkedList:
                         tmp = tmp.next_node
             new.next_node = tmp.next_node
             tmp.next_node = new
-  
+
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
         values = []
