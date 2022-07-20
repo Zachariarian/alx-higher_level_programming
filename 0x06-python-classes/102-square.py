@@ -48,11 +48,8 @@ class Square:
     def __ge__(self, other):
         return self.area() >= other.area()
 
-<<<<<<< HEAD
-=======
     def __lt__(self, other):
         return self.area() < other.area()
 
     def __le__(self, other):
         return self.area() <= other.area()
->>>>>>> 53a4c94dc85f6c09834e24f37357e7211e216cdb
