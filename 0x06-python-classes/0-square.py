@@ -2,7 +2,7 @@
 """ defining a class Square """
 
 
-class Square():
-     """ This is an empty class """
+class Square:
+    """ This is an empty class """
     pass
-
+    
