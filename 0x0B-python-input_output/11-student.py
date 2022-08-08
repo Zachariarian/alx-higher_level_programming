@@ -22,7 +22,17 @@ class Student:
             return (dic)
 
     def reload_from_json(self, json):
+<<<<<<< HEAD
+        """replaces all attributes of the Student instance"""
+        for key in json:
+            try:
+                setattr(self, key, json[key])
+            except:
+                pass
+
+=======
         """ Replaces all attributes of the Student instance"""
         save = vars(self)
         for key, value in json.items():
             save[key] = value
+>>>>>>> d409088cfccd9003c34ef281eb61813cbf843c38
