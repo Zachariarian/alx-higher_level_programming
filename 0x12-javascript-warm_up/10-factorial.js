@@ -6,5 +6,5 @@ function factorial (num) {
   }
     return 1;
 }
-  
+
 console.log(factorial(Number(process.argv[2])));
